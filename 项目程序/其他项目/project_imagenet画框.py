@@ -24,7 +24,7 @@ def find_box(filename):
     return x, y, X, Y, w, h
 
 
-def draw_box(path, box_path):
+def draw_box():
     box_list = os.listdir(box_path)
     try:
         box_list.remove('.DS_Store')
@@ -47,7 +47,6 @@ def draw_box(path, box_path):
 
 
 if __name__ == '__main__':
-    path = r'/Users/hzh/Downloads/dog'
-    box_path = r'/Users/hzh/Downloads/box'
-
-    draw_box(path, box_path)
+    path = r''
+    box_path = r''
+    draw_box()

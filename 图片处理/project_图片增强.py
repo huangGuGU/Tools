@@ -119,7 +119,7 @@ def img_albumentations(path, save, show_flag):
 
 
 if __name__ == '__main__':
-    path = r'/Users/hzh/Desktop/九院肠息肉'
-    save = r'/Users/hzh/Desktop/label'
+    path = r''
+    save = r''
     show_flag = False
     img_albumentations(path, save, show_flag)

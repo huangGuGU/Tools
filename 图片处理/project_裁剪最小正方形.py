@@ -5,8 +5,8 @@ import torch
 import torchvision.transforms as transforms
 import torch.nn.functional as F
 
-path = r'/Users/hzh/Desktop/d'
-save = r'/Users/hzh/Desktop'
+path = r''
+save = r''
 padding = True
 num_list = os.listdir(path)
 try:

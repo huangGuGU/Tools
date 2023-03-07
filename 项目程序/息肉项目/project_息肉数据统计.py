@@ -1,7 +1,7 @@
 #########################################################################
-# txt_path 是存放指标的路径（为了写入excel准备，是个中间变量，不用管）
-# img_path和label_path就是结果和labe的路径，遍历两个路径图片，计算指标
-# img_extension就是图片后缀，.jpg或者.png
+# TXT_path 是存放指标的路径（为了写入excel准备，是个中间变量，不用管）
+# Img_path和label_path就是结果和labe的路径，遍历两个路径图片，计算指标
+# Img_extension就是图片后缀，.jpg或者.png
 #########################################################################
 from 装饰器.decorator_程序启动 import logit
 import os
@@ -73,10 +73,9 @@ def polyp_count(txt_path, excel_path, img_path, label_path, img_extension):
 
 
 if __name__ == '__main__':
-    txt_path = r'./data.txt'
-    excel_path = r'./data.xlsx'
-
-    img_path = r'..\results\HarDMSEG'
-    label_path = r'..\dataset\TestDataset'
-    img_extension = '.png'
-    polyp_count(txt_path, excel_path, img_path, label_path, img_extension)
+    TXT_path = r'./data.txt'
+    Excel_path = r'./data.xlsx'
+    Img_path = r''
+    Label_path = r''
+    Img_extension = '.png'
+    polyp_count(TXT_path, Excel_path, Img_path, Label_path, Img_extension)

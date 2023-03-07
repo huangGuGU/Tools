@@ -5,8 +5,9 @@
 from 装饰器.decorator_程序启动 import logit
 import matplotlib.pyplot as plt
 
+
 @logit
-def analyse_classify(path):
+def analyse_classify():
     loss_list = []
     accuracy_list = []
     epoch_list = []
@@ -16,8 +17,7 @@ def analyse_classify(path):
             loss_list.append(float(Line.split(':')[1][:5]))
             accuracy_list.append(float(Line.split(':')[2][:5]))
 
-
-    plt.plot(epoch_list,accuracy_list, label='accuracy')
+    plt.plot(epoch_list, accuracy_list, label='accuracy')
     plt.margins(0)
     plt.subplots_adjust(bottom=0.15)
     plt.xlabel("epoch")
@@ -25,8 +25,7 @@ def analyse_classify(path):
     plt.title("accuracy")
     plt.show()
 
-
-    plt.plot(epoch_list,loss_list, label='loss')
+    plt.plot(epoch_list, loss_list, label='loss')
     plt.margins(0)
     plt.subplots_adjust(bottom=0.15)
     plt.xlabel("epoch")
@@ -38,5 +37,5 @@ def analyse_classify(path):
 
 if __name__ == '__main__':
     path = '/Users/hzh/Desktop/transformerU cifar10.txt'
-    analyse_classify(path)
+    analyse_classify()
     pass

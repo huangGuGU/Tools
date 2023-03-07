@@ -1,3 +1,4 @@
+
 import cv2
 import os
 
@@ -33,7 +34,6 @@ for img_file in file_list:
     for img in img_list:
         img_path = os.path.join(Img_path, img)
         save_path = os.path.join(Save_path, img)
-
         process(img_path, save_path)
 
 print('done')

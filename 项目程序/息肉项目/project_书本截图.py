@@ -79,6 +79,6 @@ def cut_photo(path, save):
 
 
 if __name__ == '__main__':
-    path = r'/Users/hzh/Library/Mobile Documents/com~apple~CloudDocs/工作/内窥镜/肠道书和图片/下消化第六章图'
-    save = r'/Users/hzh/Downloads/处理文件夹'
+    path = r''
+    save = r''
     cut_photo(path, save)

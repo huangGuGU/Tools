@@ -8,7 +8,7 @@ year = int("20"+input('年份：'))
 month = int(input('月份：'))
 path = r'/Users/hzh/Desktop/today.xlsx'
 
-name_list = ["周几", '嵇友鹏', '吴明珠', '成意', '黄桂锋', "龙向东"]
+name_list = ["周几", 'a', 'b', 'c', 'd', "e"]
 maxday = int(calendar.monthrange(2022, 11)[1])  # 当月的天数
 today_array = np.zeros((len(name_list), maxday))
 

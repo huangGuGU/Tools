@@ -2,8 +2,8 @@ import os
 import numpy as np
 import PIL.Image as Image
 
-path = r'/Users/hzh/手写数据集/train_img'
-save = r'/Users/hzh/Desktop/train_img_processed'
+path = r''
+save = r''
 num_list = os.listdir(path)
 try:
     num_list.remove('.DS_Store')

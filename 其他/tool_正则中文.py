@@ -8,6 +8,6 @@ with open(path) as f1:
     txt = f1.readlines()
     for line in txt:
         TxT = TxT + line
-
+# xxxx
 result = re.sub('[\u4e00-\u9fa5]+', '...', TxT)
 print(result)

@@ -8,7 +8,7 @@ from 装饰器.decorator_程序启动 import logit
 
 @logit
 def cut_patch(path, save, num):
-    if os.path.exists(save) == False:
+    if not os.path.exists(save):
         os.makedirs(save)
 
     img = cv2.imread(path)
@@ -32,7 +32,7 @@ def cut_patch(path, save, num):
 
 
 if __name__ == '__main__':
-    file_path = '/Users/hzh/Downloads/Test_193.png'
-    save_path = '/Users/hzh/Desktop/result'
+    file_path = ''
+    save_path = ''
     cut_num = 4
     cut_patch(file_path, save_path, cut_num)

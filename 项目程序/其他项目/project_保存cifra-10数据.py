@@ -15,7 +15,7 @@ def unpickle(file):
 
 
 # 训练集有五个批次，每个批次10000个图片，测试集有10000张图片
-def CIFAR10_save(path):
+def CIFAR10_save():
     for i in range(1, 6):
         data_name = path + '/' + 'data_batch_' + str(i)
         data_dict = unpickle(data_name)
@@ -44,7 +44,7 @@ def CIFAR10_save(path):
         img = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         # 要改成不同的形式的文件只需要将文件后缀修改即可
         img_name = str(test_dict[b'labels'][m]) + str(10000 + m) + '.jpg'
-        img_path = os.path.join(loc_2,img_name)
+        img_path = os.path.join(loc_2, img_name)
         cv2.imwrite(img_path, img)
     print(f'{test_data_name} done')
     print('all done')
@@ -59,5 +59,5 @@ if __name__ == '__main__':
     if not os.path.exists(loc_2):
         os.mkdir(loc_2)
 
-    CIFAR10_save(path)
+    CIFAR10_save()
     print('done')

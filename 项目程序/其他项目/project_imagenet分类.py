@@ -1,16 +1,17 @@
 #####################################################################################
-# txt_path存放1k个顺序中文名
-# excel_path存放分类好的excel文件
+# TXT_path存放1k个顺序中文名
+# Excel_path存放分类好的excel文件
 #####################################################################################
 import os
 import pandas as pd
-import  PIL.Image as  Image
-
+import PIL.Image as Image
 
 '''获取excel的每一个类中内容对应ImagNet的图片文件夹位置'''
+
+
 def get_index(excel_path, txt_path):
     class_index = {}
-    with open(txt_path, 'r',encoding='utf-8') as f:
+    with open(txt_path, 'r', encoding='utf-8') as f:
         n_list = f.readlines()
         name_list = list(map(lambda x: x[:-1], n_list))  # 去掉\n
 
@@ -25,12 +26,11 @@ def get_index(excel_path, txt_path):
     return class_index
 
 
-
-def save_img(img_path,class_index):
+def save_img(img_path, class_index, save_path):
     img_list = os.listdir(img_path)
 
-    for clazz,index in class_index.items():
-        class_path = os.path.join(save_path,clazz)
+    for clazz, index in class_index.items():
+        class_path = os.path.join(save_path, clazz)
         if not os.path.exists(class_path):
             os.makedirs(class_path)
 
@@ -38,13 +38,13 @@ def save_img(img_path,class_index):
 
             file_name = img_list[i]
 
-            image_path = os.path.join(img_path,file_name)
+            image_path = os.path.join(img_path, file_name)
             imgs = os.listdir(image_path)
 
             for img in imgs:
-                im_path = os.path.join(image_path,img)
+                im_path = os.path.join(image_path, img)
                 im = Image.open(im_path)
-                im_save_path = os.path.join(save_path,clazz,img)
+                im_save_path = os.path.join(save_path, clazz, img)
                 im.save(im_save_path)
         print(f'{clazz} done')
 
@@ -52,21 +52,10 @@ def save_img(img_path,class_index):
 
 
 if __name__ == '__main__':
-    excel_path = r'分类.xlsx'
-    txt_path = r'imagenet类别.txt'
-    img_path = r'E:\download\train_choice 400 595'
-    save_path = r'E:\download\big_class_choice'
+    Excel_path = r'分类.xlsx'
+    TXT_path = r'imagenet类别.txt'
+    Img_path = r'E:\download\train_choice 400 595'
+    Save_path = r'E:\download\big_class_choice'
 
-    class_index = get_index(excel_path, txt_path)
-    save_img(img_path,class_index)
-
-
-
-
-
-
-
-
-
-
-
+    Class_index = get_index(Excel_path, TXT_path)
+    save_img(Img_path, Class_index, Save_path)
