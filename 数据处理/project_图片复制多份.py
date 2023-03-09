@@ -2,7 +2,6 @@ from 装饰器.decorator_程序启动 import logit
 import os
 
 
-
 @logit
 def copy_multiple(path, save_path):
     if not os.path.exists(save_path):

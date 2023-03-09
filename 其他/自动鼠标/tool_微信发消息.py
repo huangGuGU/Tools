@@ -15,7 +15,7 @@ class Click:
     @staticmethod
     def mouseClick(lOrR, img_list):
         while True:
-            if len(img_list)>1:
+            if len(img_list) > 1:
 
                 location1 = pg.locateCenterOnScreen(img_list[0], confidence=0.9)
                 location2 = pg.locateCenterOnScreen(img_list[1], confidence=0.9)
@@ -63,8 +63,8 @@ class Send(Click):
     @logit
     def wechat(self, ):
         click.search_app('weix')
-        click.mouseClick(lOrR='left', img_list=[self.img_object_home1,self.img_object_e])  # 找到聊天对象
-        click.mouseClick(lOrR='left', img_list=[self.img_frame1,self.img_frame2])  # 找到目标聊天框
+        click.mouseClick(lOrR='left', img_list=[self.img_object_home1, self.img_object_e])  # 找到聊天对象
+        click.mouseClick(lOrR='left', img_list=[self.img_frame1, self.img_frame2])  # 找到目标聊天框
         pg.hotkey('command', 'v')
         pg.hotkey('enter')
 
@@ -81,7 +81,7 @@ class Find(Click):
     def weather(self, location):
 
         click.search_app('safari')
-        click.mouseClick(lOrR='left', img_list=[self.img_create_page1,self.img_create_page2])  # 新建页面
+        click.mouseClick(lOrR='left', img_list=[self.img_create_page1, self.img_create_page2])  # 新建页面
 
         # 进入网站
         if location == '无锡':
