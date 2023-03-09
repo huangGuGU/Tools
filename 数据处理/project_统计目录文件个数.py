@@ -29,5 +29,5 @@ def countFileNum(path):
 
 
 if __name__ == '__main__':
-    file_path = r'/Users/hzh/Library/Mobile Documents/com~apple~CloudDocs/工作/内窥镜/肠道书和图片/下消化道/下消化道白光图片/原图'
+    file_path = r''
     countFileNum(file_path)

@@ -4,7 +4,7 @@ import numpy as np
 import pandas as pd
 import calendar
 
-year = int("20"+input('年份：'))
+year = int("20" + input('年份：'))
 month = int(input('月份：'))
 path = r'/Users/hzh/Desktop/today.xlsx'
 

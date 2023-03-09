@@ -20,7 +20,7 @@ def make_chart(x_list, y_list, y2):
     plt.subplots_adjust(bottom=0.15)
     plt.tight_layout()
     plt.legend()
-    plt.savefig(f'/Users/hzh/Desktop/1.png')
+    plt.savefig(f'../images/output/1.png')
     plt.show()
 
 

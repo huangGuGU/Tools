@@ -8,7 +8,7 @@ from 装饰器.decorator_程序启动 import logit
 
 
 @logit
-def decompression_tar(path, save_path):
+def decompression_tar():
     """拨开第一层tar"""
     with tarfile.open(path) as file:
         for t1 in file.getmembers():
@@ -29,7 +29,7 @@ def decompression_tar(path, save_path):
 
 
 if __name__ == '__main__':
-    path = r'/Users/hzh/Downloads/ILSVRC2012_img_train_t3.tar'
-    save_path = r'/Users/hzh/Downloads/dog'
-    decompression_tar(path, save_path)
+    path = r'ILSVRC2012_img_train_t3.tar'
+    save_path = r'../images/save'
+    decompression_tar()
 

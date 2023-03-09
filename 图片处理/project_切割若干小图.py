@@ -10,7 +10,7 @@ from 装饰器.decorator_程序启动 import logit
 
 
 @logit
-def cut_img_by_kernel(path, save, kernel_x, kernel_y, step):
+def cut_img_by_kernel():
     img_list = os.listdir(path)
     if not os.path.exists(save):
         os.makedirs(save)
@@ -45,9 +45,9 @@ def cut_img_by_kernel(path, save, kernel_x, kernel_y, step):
 
 
 if __name__ == '__main__':
-    path = '/Users/hzh/Desktop/Img'
-    save = '/Users/hzh/Desktop/Result'
+    path = r'../images/img'
+    save = r'../images/save'
     kernel_x = 80
     kernel_y = 80
     step = 65
-    cut_img_by_kernel(path, save, kernel_x, kernel_y, step)
+    cut_img_by_kernel()

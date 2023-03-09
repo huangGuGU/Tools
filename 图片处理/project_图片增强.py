@@ -31,7 +31,7 @@ def ImageRotate(imagepath):
 
 
 @logit
-def img_albumentations(path, save, show_flag):
+def img_albumentations():
     img_list = os.listdir(path)
     try:
         img_list.remove('.DS_Store')
@@ -119,7 +119,7 @@ def img_albumentations(path, save, show_flag):
 
 
 if __name__ == '__main__':
-    path = r''
-    save = r''
+    path = r'../images/img'
+    save = r'../images/save'
     show_flag = False
-    img_albumentations(path, save, show_flag)
+    img_albumentations()

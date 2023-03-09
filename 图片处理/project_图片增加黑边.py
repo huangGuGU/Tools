@@ -28,6 +28,6 @@ def img_padding(path, save):
 
 
 if __name__ == '__main__':
-    file_path = ''
-    Save_path = ''
+    file_path = r'../images/img'
+    Save_path = r'../images/save'
     img_padding(file_path, Save_path)

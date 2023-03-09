@@ -51,8 +51,8 @@ def find_diff(path, target, save, flag):
 
 
 if __name__ == '__main__':
-    file_path = '/Users/hzh/Desktop/output'
-    label_path = '/Users/hzh/Desktop/label'
-    Save_path = '/Users/hzh/Desktop/result'
+    file_path = '/Users/Desktop/output'
+    label_path = '/Users/Desktop/label'
+    Save_path = '/Users/Desktop/result'
     color_flag = False
     find_diff(file_path, label_path, Save_path, color_flag)

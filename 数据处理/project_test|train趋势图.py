@@ -2,7 +2,7 @@
 # 需要填入train和test的loss数据
 # 数据类型是用：分割 epoch：loss：accuracy
 # train_loss和test_loss分别是两个txt文件
-# Range是个list，如果有时候loss改变太大，最后几个epoch趋势看不到，那就切片[a,b]范围的loss趋势
+# Range是个list，如果有时候loss改变太大，最后几个epoch趋势看不到，那就切片a~b范围的loss趋势
 #####################################################################################
 from 装饰器.decorator_程序启动 import logit
 import matplotlib.pyplot as plt
@@ -56,6 +56,6 @@ def draw_loss_curve(train_loss, test_loss, save_path, Range):
 if __name__ == '__main__':
     train_loss = r''
     test_loss = r''
-    save_path = r'/Users/hzh/Desktop/'
+    save_path = r'../images/save'
     Range = [700, 1500]
     draw_loss_curve(train_loss, test_loss, save_path, Range)

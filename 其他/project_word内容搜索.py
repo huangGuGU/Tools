@@ -64,6 +64,6 @@ def find_sentence(path, excel_path):
 
 
 if __name__ == '__main__':
-    File_path = r'/Users/hzh/Desktop/file'
-    Excel_path = r'/Users/hzh/Desktop/Word提取数据.xlsx'
+    File_path = r'../images/images'
+    Excel_path = r'../images/output/Word提取数据.xlsx'
     find_sentence(File_path, Excel_path)

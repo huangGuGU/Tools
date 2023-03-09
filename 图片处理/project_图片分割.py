@@ -32,7 +32,7 @@ def cut_patch(path, save, num):
 
 
 if __name__ == '__main__':
-    file_path = ''
-    save_path = ''
+    file_path = r'../images/img'
+    save_path = r'../images/save'
     cut_num = 4
     cut_patch(file_path, save_path, cut_num)

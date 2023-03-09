@@ -34,6 +34,6 @@ def copy_multiple(path, save_path):
 
 
 if __name__ == '__main__':
-    path = '/Users/hzh/Desktop/File'
-    save_path = '/Users/hzh/Desktop/File_done'
+    path = '/Users/Desktop/File'
+    save_path = '/Users/Desktop/File_done'
     copy_multiple(path, save_path)

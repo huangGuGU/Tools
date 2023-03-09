@@ -52,6 +52,6 @@ def img_stitching(path, model, save):
 
 if __name__ == '__main__':
     stitch_model = 1
-    img_file_path = r'/Users/hzh/Desktop/img'
-    save_path = rf'/Users/hzh/Desktop/img_stitched_{stitch_model}.png'
-    img_stitching(img_file_path, stitch_model, save_path)
+    file_path = r'../images/img'
+    save_path = rf'../images/save/img_stitched_{stitch_model}.png'
+    img_stitching(file_path, stitch_model, save_path)

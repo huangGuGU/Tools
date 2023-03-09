@@ -1,6 +1,6 @@
 #########################################################################
-# path是输出图片文件夹路径，label_path是label路径，文件里图片名字需要相同
-# save_path保存阴阳图的路径
+# File_path是输出图片文件夹路径，Label_path是label路径，文件里图片名字需要相同
+# Save_path保存阴阳图的路径
 # 假阴 紫色；假阳 绿色
 #########################################################################
 import os
@@ -66,7 +66,7 @@ def fp_img(path, label_path, save_path):
 
 
 if __name__ == '__main__':
-    path = '/Users/hzh/Desktop/File'
-    label_path = '/Users/hzh/Desktop/label'
-    save_path = '/Users/hzh/Desktop/FN-FP'
-    fp_img(path, label_path, save_path)
+    Label_path = '../images/label'
+    File_path = r'../images/img'
+    Save_path = r'../images/save'
+    fp_img(File_path, Label_path, Save_path)
